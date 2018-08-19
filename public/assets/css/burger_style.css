@@ -19,27 +19,52 @@ h1 {
 li {
     width: 200px;
     background-color: #e1e1e1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid grey;
 }
-ol {
-    background-color: #e1e1e1;
-}
+
 ol.alreadyEaten {
-    list-style: none;
+    float: left;
+    margin-left: 100px;
+    padding-left: 30px;
 }
+
+ol.notDevoured {
+    float: right;
+    margin-right: 100px;
+    padding-right: 30px;
+}
+
 ol.alreadyEaten button {
-    visibility: hidden;
-    
+    visibility: hidden;   
+}
+
+ol.alreadyEaten li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ol.notDevoured li {
+    margin-top: 0px;
+}
+
+ol.notDevoured button {
+    position: absolute;
+    left: 550px;
+    padding: 5px;
 }
 
 form {
     clear: both;
 }
-.devourIt {
-    position: relative;
-    left: 150px;
+
+.burgerBox { 
+    padding-top: 10px;
+    margin: 15px;
 }
-.burgerBox {
-    
-    padding-top: 2px;
-    margin: 5px;
+
+.column {
+    width: 50%;
+    float: left;
 }

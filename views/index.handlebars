@@ -3,7 +3,7 @@
   <h1>Eat-Da-Burger!</h1>
 
 {{!-- <h2>Burgers that are not eaten!</h2> --}}
-
+<div class="column">
 <ol class="notDevoured">
   {{#each burgers}}
     {{#unless devoured}}
@@ -11,9 +11,9 @@
     {{/unless}}
   {{/each}}
 </ol>
-
+</div>
 {{!-- <h2>Burgers that are eaten!</h2> --}}
-
+<div class="column">
 <ol class="alreadyEaten">
   {{#each burgers}}
     {{#if devoured}}
@@ -21,6 +21,7 @@
     {{/if}}
   {{/each}}
 </ol>
+</div>
 
 {{!-- <h2>Add a Burger</h2> --}}
 <form class="create-form">
